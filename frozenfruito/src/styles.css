@@ -1,0 +1,22 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.navbar--container{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    padding: 30px 80px;
+    justify-content: center;
+}
+
+.navbar--container > a {
+    margin: 0 40px;
+}
+
