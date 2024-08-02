@@ -12,8 +12,8 @@ function App() {
   ];
 
   const containerStyles = {
-    width: "500px",
-    height: "280px",
+    width: "700px",
+    height: "400px",
     margin: "0 auto"
   };
   
