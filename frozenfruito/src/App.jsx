@@ -1,18 +1,30 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Homepage from "./Components/Homepage";
+import Homepage from "./Pages/Homepage";
 import './styles.css';
-
-
+import { ImageSlider } from "./Components/ImageSlider";
 
 function App() {
+
+  const slides = [
+    { url: "/slider1.jpg", title: "fruits" }, // Assuming slider1.jpg is in the public directory
+    { url: "/slider2.jpg", title: "vegetables" }, // Ensure these images exist in the public directory
+    { url: "/slider3.jpg", title: "grains" }
+  ];
+
+  const containerStyles = {
+    width: "500px",
+    height: "280px",
+    margin: "0 auto"
+  };
+  
   return (
     <div>
-       <Navbar/>
-       <Homepage/>
+      <Homepage />
+      <div style={containerStyles}>
+        <ImageSlider slides={slides} />
+      </div>
     </div>
-   
-  )
+  );
 }
 
-export default App
+export default App;

@@ -6,6 +6,7 @@
 
 body{
     margin:0;
+    /* background-image: url('./public/images/background.jpg'); */
 }
 
 .navbar--container{
@@ -14,9 +15,23 @@ body{
     align-items: center;
     padding: 30px 80px;
     justify-content: center;
+    box-shadow: #000;
 }
 
 .navbar--container > a {
     margin: 0 40px;
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+    font-size: 28px;
 }
 
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
