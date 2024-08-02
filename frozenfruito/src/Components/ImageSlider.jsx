@@ -38,17 +38,19 @@ export const ImageSlider = ({ slides }) => {
         cursor: "pointer",
     };
 
+
     const goToPrevious = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-        );
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
     };
 
+
     const goToNext = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }
 
     return (
         <div style={sliderStyles}>
