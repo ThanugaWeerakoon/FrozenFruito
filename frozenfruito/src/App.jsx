@@ -6,7 +6,6 @@ import ContactPage from "./Pages/ContactPage";
 import ProductsPage from "./Pages/ProductsPage";
 
 
-import './styles.css';
 import { ImageSlider } from "./Components/ImageSlider";
 
 function App() {
