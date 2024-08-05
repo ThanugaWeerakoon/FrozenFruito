@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Navbar.css'; // Import the CSS file for styling
+ // Import the CSS file for styling
 
 export default function Navbar() {
   return (
