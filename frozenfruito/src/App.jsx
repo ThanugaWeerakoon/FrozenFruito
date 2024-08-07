@@ -4,7 +4,8 @@ import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";
 import ContactPage from "./Pages/ContactPage";
 import ProductsPage from "./Pages/ProductsPage";
-import './Components/styles.css';  
+import './Components/styles.css'; 
+import Footer from "./Components/Footer";
 
 
 

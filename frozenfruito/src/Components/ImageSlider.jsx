@@ -25,18 +25,23 @@ export const ImageSlider = ({ slides }) => {
     }
 
     return (
-        <div className='slider-container'>
-            <div className="slider">
-                <div className="left-arrow" onClick={goToPrevious}>🡸</div>
-                <div className="right-arrow" onClick={goToNext}>🡺</div>
-                <div className="slide" style={slideStyles}></div>
-                <div className='dots-container'>
-                    {slides.map((slide, slideIndex) => (
-                        <div className='dots' key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>
-                    ))}
+        <div>
+            <div className='slider-container'>
+                <div className="slider">
+                    <div className="left-arrow" onClick={goToPrevious}>🡸</div>
+                    <div className="right-arrow" onClick={goToNext}>🡺</div>
+                    <div className="slide" style={slideStyles}></div>
+                    <div className='dots-container'>
+                        {slides.map((slide, slideIndex) => (
+                            <div className='dots' key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="description">{slides[currentIndex].description}</div>
-        </div>    
+            </div>   
+            <div className="title">{slides[currentIndex].title}</div>     
+            <div className="description">{slides[currentIndex].description}</div>     
+            <div className="details">{slides[currentIndex].details}</div>     
+        
+        </div>
     );
 };
