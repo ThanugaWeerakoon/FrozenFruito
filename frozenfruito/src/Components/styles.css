@@ -88,6 +88,24 @@ body{
 }
 
 
+.image1{
+  position: absolute;
+  width: auto;
+  height: 250px;
+  margin-top: 240px;
+  margin-left: 100px;
+  cursor: pointer ;
+}
+
+.image2{
+  position: absolute;
+  width: auto;
+  margin-top: 240px;
+  margin-left: 370px;
+  height: 250px;
+  cursor: pointer;
+}
+
 
 .dots-container{
     display: flex;
@@ -149,3 +167,26 @@ body{
     }
   
      }
+
+     .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+  
+  .modal-image {
+      max-width: 90%;
+      max-height: 90%;
+  }
+  
+  .modal img {
+      display: block;
+      margin: 0 auto;
+  }
