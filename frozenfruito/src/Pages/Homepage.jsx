@@ -60,7 +60,7 @@ export default function Homepage(){
                 <WelcomeSlide slides={slides} />
             </div>
             <div className="welcome-text">
-                <h1>Welcome to Great Frozen!</h1>
+                <h1>Welcome to <br/> Great Frozen!</h1>
             </div>
         </div>    
 

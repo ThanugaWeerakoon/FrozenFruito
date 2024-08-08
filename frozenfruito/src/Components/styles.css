@@ -161,8 +161,10 @@ body{
 .welcome-text{
   color: #000000;
   font-weight: bold;
-  margin-left: 230px;
+  margin-left: 120px;
   margin-top: 50px;
+  font-size: 40px;
+
 }
 
   @media (max-width: 768px) {
@@ -202,9 +204,9 @@ body{
 
 .welcome-slider{
   position: absolute;
-  width: 800px;
+  width: 600px;
   height: 400px;
-  margin-left: 800px;
+  margin-left: 500px;
 }
 
 .welcome-slide{
@@ -215,20 +217,20 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
-  margin-left: 180px;
+  margin-left: 800px;
   z-index: 1; 
 }
 
 .welcome-slide img{
   height: 400px;
   width: 400px;
-  transition: opacity 0.5s ease-in-out;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .select-container{
   display: flex;
   justify-content: center;
+  margin-left: 50%;
 
 }
 
@@ -244,7 +246,7 @@ body{
   font-size: 30px;
   color: #fff;
   margin-top: 180px;
-  margin-left: 450px;
+  margin-left: 820px;
   z-index: 1;
   font-weight: 400;
 }
@@ -257,3 +259,4 @@ body{
   height: 60%;
   z-index: 0; 
 }
+

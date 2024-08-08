@@ -34,7 +34,7 @@ export const WelcomeSlide = ({ slides }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % slides.length);
-        }, 2000); 
+        }, 3000); 
 
         return () => clearInterval(interval); 
     }, [slides.length]);
