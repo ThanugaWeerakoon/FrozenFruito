@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { ImageSlider } from "../Components/ImageSlider";
+import { WelcomeSlide } from "../Components/WelcomeSlide";
 
 
 
@@ -10,65 +10,46 @@ export default function Homepage(){
     const slides = [
 
         { url: "/images/6.png", 
-          title: "PASSION FRUIT PULP",
-          description:'GREAT FROZEN PASSION PULP FROZEN(-18) IS IDEAL FOR COCKTAILS, MOCKTAILS, WELCOME DRINKS, FRUIT JUICE, ICE-CREAMS, CAKE AND DESSERTS. MADE OUT OF CEYLON PASSION FRUITS, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. PASSION FRUIT MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, PROVIDES KEY NUTRIENTS(VITAMIN A,C,B-6), RICH IN ANTIOXIDANTS, AND ALSO IT BOOSTS THE IMMUNE SYSTEM.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'/images/passionfruit1.jpg',
-          image2:'/images/passionfruit2.jpg',
-          
+          title: "PASSION FRUIT PULP",     
         },
 
         { url: "/images/1.png", 
           title: "AVACADO PULP",
-          description:'GREAT FROZEN AVACADO PULP FROZEN(-18) IS IDEAL FOR WELCOME DRINKS, FRUIT JUICE, SAUCES, DRESSINGS, SMOOTHIES, ICE-CREAM, AND YOGHURT. MADE OUT OF CEYLON AVACADO, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. PINEAPPLE MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, HEALTHY FOR HEART, BOOSTS SATIETY, PROTECTS YOUR EYES.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+        
          }, 
     
         { url: "/images/2.png",
           title: "PINEAPPLE PULP",
-          description:'GREAT FROZEN PINEAPPLE PULP FROZEN(-18) IS IDEAL FOR COCKTAILS, MOCKTAILS, WELCOME DRINKS, FRUIT JUICE, ICE-CREAMS, CAKE AND DESSERTS. MADE OUT OF CEYLON PINEAPPLES, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. PINEAPPLE MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, CONTAINS NUTRIENTS AND BENEFICIAL COMPOUNDS, LIKE VITAMIN C, MANGANESE AND ENZYMES, TO HELP AID DIGESTION, REDUCE YOUR RISK OF CANCER, BOOST IMMUNITY AND SUPPRESS INFLAMMATION.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+          
          }, 
     
         { url: "/images/3.png",
           title: "SOURSOP PULP",
-          description:'GREAT FROZEN SOURSOP PULP FROZEN(-18) IS IDEAL FOR COCKTAILS, MOCKTAILS, WELCOME DRINKS, FRUIT JUICE, SMOOTHIES, CANDIES. MADE OUT OF CEYLON SOURSOP, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. SOURSOP MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, REDUCE BLOOD SUGAR LEVELS, REDUCE INFLAMMATION, AND TO HAVE ANTIBACTERIAL PROPERTIES.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+          
         },
           
     
         { url: "/images/4.png", 
           title: "MANGO PULP",
-          description:'GREAT FROZEN TCJ MANGO PULP FROZEN(-18) IS IDEAL FOR COCKTAILS, MOCKTAILS, WELCOME DRINKS, FRUIT JUICE, SMOOTHIES, CANDIES. MADE OUT OF CEYLON TCJ MANGO, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. TCJ MANGO MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, AN EXCELLENT SOURCE OF DIETRY FIBRE, HAVE A HIGH CONTENT OF VITAMINS A AND C, AND ADDITIONALLY PROVIDE A GOOD AMOUNT OF MAGNESIUM AND POTTASSIUM.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+          
         },
         
     
         { url: "/images/5.png", 
           title: "GUAVA PULP",
-          description:'GREAT FROZEN GUAVA PULP FROZEN(-18) IS IDEAL FOR MARGARITAS, WELCOME DRINKS, FRUIT JUICE, SMOOTHIES, JAMS, ICE-CREAMS AND DESSERTS. MADE OUT OF CEYLON GUAVA. NO ADDED PRESERCATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. GUAVA MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, BENEFIT YOUR DIGESTIVE SYSTEM, AID WEIGHT LOSS, HAVE AN ANTICANCER EFFECT, HELP BOOST YOUR IMMUNITY',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+         
         },
         
 
         { url: "/images/7.png", 
           title: "WATERMELON PULP",
-          description:'GREAT FROZEN WATERMELON PULP FROZEN(-18) IS IDEAL FOR COCKTAILS, MOCKTAILS, WELCOME DRINKS, FRUIT JUICE, SMOOTHIES, CANDIES. MADE OUT OF CEYLON WATERMELON, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. WATERMELON MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, HELPS YOU STAY HYDRATED, HAVE ANTICANCER EFFECTS, IMPROVE HEART HEALTH, AID SKIN HEALTH.',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+          
         },
         
     
         { url: "/images/8.jpg", 
           title: "FROZEN KING COCONUT WATER",
-          description:'GREAT FROZEN KING COCONUT WATER FROZEN(-18) IS IDEAL FOR MOCKTAILS, MARGARITAS, WELCOME DRINKS, FRUIT JUICES. MADE OUT OF CEYLON KING COCONUTS, NO ADDED PRESERVATIVES, SUGAR, WATER AND COLOUR. 100% NATURAL PRODUCT. KING COCONUT MAY OFFER NUMEROUS HEALTH BENEFITS SUCH AS, GIVE EXCELLENT HYDRATION FOR THE BODY, RADUCE THE RISK OF KIDNEY STONES, PROMOTES DIGESTIVE HEALTH, BOOSTS IMMUNITY',
-          details:'Available sizes: 500g, 5kg, 10kg, 25kg',
-          image1:'path',
+          
         },
         
       ];
@@ -76,10 +57,10 @@ export default function Homepage(){
     return(
         <div>            
             <div>
-                <ImageSlider slides={slides} />
+                <WelcomeSlide slides={slides} />
             </div>
             <div className="welcome-text">
-                <h1>Welcome to Great Frozen</h1>
+                <h1>Welcome to Great Frozen!</h1>
             </div>
         </div>    
 
