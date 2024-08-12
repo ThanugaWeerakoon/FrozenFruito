@@ -235,10 +235,16 @@ body{
 }
 
 .select{
-  font-size: 50px;
+  font-size: 70px;
   cursor: pointer;
   color: #000000;
   padding: 3px;
+  transition: color 0.3s ease;
+}
+
+.select.active {
+  color: #ff9900; /* Highlighted color */
+  font-weight: bold;
 }
 
 .welcome-title{

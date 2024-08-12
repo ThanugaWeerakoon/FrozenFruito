@@ -12,7 +12,6 @@ export const WelcomeSlide = ({ slides }) => {
         'linear-gradient(to right, rgba(162, 243, 145, 0.8), rgba(0, 0, 0, 0))',
         'linear-gradient(to right, rgba(255, 45, 0, 0.8), rgba(0, 0, 0, 0))',
         'linear-gradient(to right, rgba(255, 146, 0, 0.8), rgba(0, 0, 0, 0))',
-
     ];
 
     const titleColors = [
@@ -25,7 +24,6 @@ export const WelcomeSlide = ({ slides }) => {
         '#bd0606', 
         '#ba6f02', 
     ];
-
 
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex);
@@ -46,12 +44,18 @@ export const WelcomeSlide = ({ slides }) => {
                 style={{ backgroundImage: gradients[currentIndex] }}
             />
             <div className="welcome-slider">
-            <div className="welcome-slide">
-    <img src={slides[currentIndex].url} alt="slide image" />
-</div>
+                <div className="welcome-slide">
+                    <img src={slides[currentIndex].url} alt="slide image" />
+                </div>
                 <div className='select-container'>
                     {slides.map((slide, slideIndex) => (
-                        <div className='select' key={slideIndex} onClick={() => goToSlide(slideIndex)}>-</div>
+                        <div 
+                            className={`select ${currentIndex === slideIndex ? 'active' : ''}`} 
+                            key={slideIndex} 
+                            onClick={() => goToSlide(slideIndex)}
+                        >
+                            -
+                        </div>
                     ))}
                 </div>
             </div>
