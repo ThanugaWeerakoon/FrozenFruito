@@ -5,7 +5,7 @@ import Homepage from "./Pages/Homepage";
 import ContactPage from "./Pages/ContactPage";
 import ProductsPage from "./Pages/ProductsPage";
 import './Components/styles.css'; 
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 
 
