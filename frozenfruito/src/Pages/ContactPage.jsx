@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/Footer";
 
 export default function ProductsPage() {
   return (
@@ -98,12 +99,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-      <footer className="bg-green-700 text-white text-center py-8">
-        <p>
-          &copy; Copyright FrozenFruito 2024 . All rights reserved. Develop by
-          LegionCode IT Solutions (pvt) Ltd.
-        </p>
-      </footer>
+      <Footer/>
     </div>
   );
 }
