@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Image1 from "../../public/images/1.png";
-import Image2 from "../../public/images/2.png";
-import Image3 from "../../public/images/3.png";
-import Image4 from "../../public/images/4.png";
-import Image5 from "../../public/images/5.png";
+import Image1 from "../../public/images/1.jpg";
+import Image2 from "../../public/images/2.jpg";
+import Image3 from "../../public/images/3.jpg";
+import Image4 from "../../public/images/4.jpg";
+import Image5 from "../../public/images/5.jpg";
 import Pulp from "../../public/images/9471315-removebg-preview.png";
 import Pulp2 from "../../public/images/1_45_-removebg-preview.png";
 import Pulp3 from "../../public/images/avocado-is-being-sprayed-with-green-liquid_1293074-13970-removebg-preview.png";
