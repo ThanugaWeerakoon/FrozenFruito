@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Image1 from "../../public/images/1.png";
-import Image2 from "../../public/images/2.png";
-import Image3 from "../../public/images/3.png";
-import Image4 from "../../public/images/4.png";
-import Image5 from "../../public/images/5.png";
+import Image1 from "../../public/images/1.jpg";
+import Image2 from "../../public/images/2.jpg";
+import Image3 from "../../public/images/3.jpg";
+import Image4 from "../../public/images/4.jpg";
+import Image5 from "../../public/images/5.jpg";
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
 
@@ -11,9 +11,9 @@ export default function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { url: Image1, title: "AVACADO PULP" },
+    { url: Image1, title: "PASSION PULP" },
     { url: Image2, title: "PINEAPPLE PULP" },
-    { url: Image3, title: "SOURSOP PULP" },
+    { url: Image3, title: "AVACADO PULP" },
     { url: Image4, title: "MANGO PULP" },
     { url: Image5, title: "GUAVA PULP" },
   ];
