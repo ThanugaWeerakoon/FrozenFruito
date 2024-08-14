@@ -39,7 +39,7 @@ export default function Homepage() {
   return (
     <div className="relative w-full h-screen">
       {/* Carousel wrapper */}
-      <div className="relative h-[80vh] overflow-hidden rounded-lg">
+      <div className="relative h-[80vh] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
