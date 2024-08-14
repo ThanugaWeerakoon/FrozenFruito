@@ -154,7 +154,7 @@ export default function Homepage() {
                   <img
                     src={Pulp2}
                     alt="pinnaple"
-                    className="w-[214px] h-[127px]"
+                    className="w-[280px] h-[180px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
                     Cinnamon
