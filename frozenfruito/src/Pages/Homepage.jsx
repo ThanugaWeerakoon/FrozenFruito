@@ -5,6 +5,7 @@ import Image3 from "../../public/images/3.png";
 import Image4 from "../../public/images/4.png";
 import Image5 from "../../public/images/5.png";
 import Pulp from "../../public/images/9471315-removebg-preview.png";
+import Pulp2 from "../../public/images/1_45_-removebg-preview.png";
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Menu from "../Components/Menu";
@@ -151,8 +152,8 @@ export default function Homepage() {
                 </div>
                 <div className="flex flex-col items-center p-[10px]">
                   <img
-                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/cinamon.jpg"
-                    alt="Cinnamon"
+                    src={Pulp2}
+                    alt="pinnaple"
                     className="w-[214px] h-[127px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">

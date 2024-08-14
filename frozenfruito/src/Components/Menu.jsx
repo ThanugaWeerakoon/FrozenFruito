@@ -1,3 +1,4 @@
+import Pinnaple from "../../public/images/view-sliced-pineapple-fruit_23-2150325522.jpg";
 const Menu = () => {
   return (
     <section>
@@ -22,11 +23,11 @@ const Menu = () => {
               <div className="relative group flex justify-center items-center h-full w-full">
                 <img
                   className="object-center object-cover h-full w-full"
-                  src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
-                  alt="girl-image"
+                  src={Pinnaple}
+                  alt="Pinnaple"
                 />
-                <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                  Women
+                <button className="dark:bg-transparent dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+                  View Product
                 </button>
                 <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
               </div>
@@ -39,7 +40,7 @@ const Menu = () => {
                     alt="shoe-image"
                   />
                   <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                    Shoes
+                  View Product
                   </button>
                   <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
                 </div>
@@ -50,7 +51,7 @@ const Menu = () => {
                     alt="watch-image"
                   />
                   <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                    Watches
+                  View Product
                   </button>
                   <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
                 </div>
@@ -63,7 +64,7 @@ const Menu = () => {
                   alt="girl-image"
                 />
                 <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                  Accessories
+                View Product
                 </button>
                 <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
               </div>
@@ -79,7 +80,7 @@ const Menu = () => {
                   alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
                 />
                 <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                  Accessories
+                View Product
                 </button>
                 <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
               </div>
@@ -96,7 +97,7 @@ const Menu = () => {
                 alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
               />
               <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                Accessories
+              View Product
               </button>
               <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
             </div>
