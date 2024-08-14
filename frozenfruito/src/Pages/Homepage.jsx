@@ -6,6 +6,7 @@ import Image4 from "../../public/images/4.png";
 import Image5 from "../../public/images/5.png";
 import Pulp from "../../public/images/9471315-removebg-preview.png";
 import Pulp2 from "../../public/images/1_45_-removebg-preview.png";
+import Pulp3 from "../../public/images/avocado-is-being-sprayed-with-green-liquid_1293074-13970-removebg-preview.png";
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Menu from "../Components/Menu";
@@ -142,12 +143,12 @@ export default function Homepage() {
               <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center p-[10px]">
                   <img
-                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/beans.jpg"
-                    alt="Coffee Beans"
+                    src={Pulp3}
+                    alt="Avacodo"
                     className="w-[214px] h-[127px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Coffee Beans
+                    Avacodo
                   </h3>
                 </div>
                 <div className="flex flex-col items-center p-[10px]">
@@ -157,7 +158,7 @@ export default function Homepage() {
                     className="w-[280px] h-[180px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Cinnamon
+                    Pinnaple
                   </h3>
                 </div>
               </div>
