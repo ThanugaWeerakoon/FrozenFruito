@@ -1,12 +1,14 @@
 import Pinnaple from "../../public/images/view-sliced-pineapple-fruit_23-2150325522.jpg";
 import Passion from "../../public/images/jar-passion-fruit-juice-fresh-passion-fruit-cut-half-place-dark-floor.jpg";
+import Avacado from "../../public/images/healthy-green-smoothie-with-avocado-kiwi-lie-table.jpg";
+import Mango from "../../public/images/fresh-mango-juice-smoothie-with-mango-cubes_1174662-4637.jpg";
 const Menu = () => {
   return (
     <section>
       <div className="flex items-center justify-center">
         <div></div>
         <div className="flex flex-col items-center">
-          <h1 className="PT-serif text-[#1e1e1e] text-[40px] font-semibold">
+          <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
             Our Pulp Product
           </h1>
           <img
@@ -27,7 +29,7 @@ const Menu = () => {
                   src={Pinnaple}
                   alt="Pinnaple"
                 />
-                <button className="dark:bg-transparent dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+                <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
                   View Product
                 </button>
                 <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
@@ -40,7 +42,7 @@ const Menu = () => {
                     src={Passion}
                     alt="Passion"
                   />
-                  <button className="dark:bg-transparent dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+                  <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
                   View Product
                   </button>
                   <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50"></div>
@@ -48,8 +50,8 @@ const Menu = () => {
                 <div className="relative group flex justify-center items-center h-full w-full">
                   <img
                     className="object-center object-cover h-full w-full"
-                    src="https://i.ibb.co/Hd1pVxW/louis-mornaud-Ju-6-TPKXd-Bs-unsplash-1-2.png"
-                    alt="watch-image"
+                    src={Mango}
+                    alt="Mango-image"
                   />
                   <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
                   View Product
@@ -61,8 +63,8 @@ const Menu = () => {
               <div className="relative group justify-center items-center h-full w-full hidden lg:flex">
                 <img
                   className="object-center object-cover h-full w-full"
-                  src="https://i.ibb.co/PTtRBLL/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png"
-                  alt="girl-image"
+                  src={Avacado}
+                  alt="Avacado-image"
                 />
                 <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
                 View Product
@@ -74,11 +76,6 @@ const Menu = () => {
                   className="object-center object-cover h-full w-full hidden md:block"
                   src="https://i.ibb.co/6FjW19n/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2.png"
                   alt="girl-image"
-                />
-                <img
-                  className="object-center object-cover h-full w-full md:hidden"
-                  src="https://i.ibb.co/sQgHwHn/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png"
-                  alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
                 />
                 <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
                 View Product

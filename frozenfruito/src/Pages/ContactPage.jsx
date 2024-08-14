@@ -63,7 +63,7 @@ export default function ProductsPage() {
           </div>
           <button
             type="submit"
-            className="w-full bg-green-700 text-white py-3 rounded-lg shadow-lg hover:bg-green-600 transition-colors"
+            className="w-full bg-yellow-700 text-white py-3 rounded-lg shadow-lg hover:bg-green-600 transition-colors"
           >
             Send Message
           </button>

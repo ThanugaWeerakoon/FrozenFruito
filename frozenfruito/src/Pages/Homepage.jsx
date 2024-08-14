@@ -7,6 +7,8 @@ import Image5 from "../../public/images/5.jpg";
 import Pulp from "../../public/images/9471315-removebg-preview.png";
 import Pulp2 from "../../public/images/1_45_-removebg-preview.png";
 import Pulp3 from "../../public/images/avocado-is-being-sprayed-with-green-liquid_1293074-13970-removebg-preview.png";
+import Pulp4 from "../../public/images/vector-ripe-yellow-orange-red-whole-sliced-mango-cubes-with-leaf-isolated-white-background.png";
+import Pulp5 from "../../public/images/ripe-pear-side-view-wooden-grey-wall.png";
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Menu from "../Components/Menu";
@@ -41,7 +43,7 @@ export default function Homepage() {
   return (
     <div className="relative w-full h-screen">
       {/* Carousel wrapper */}
-      <div className="relative h-[80vh] overflow-hidden">
+      <div className="relative h-[93vh] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -128,7 +130,7 @@ export default function Homepage() {
             <div className="flex items-center justify-center">
               <div></div>
               <div className="flex flex-col items-center">
-                <h1 className="PT-serif text-[#1e1e1e] text-[40px] font-semibold">
+                <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
                   Our Awsome Pulp
                 </h1>
                 <img
@@ -145,7 +147,7 @@ export default function Homepage() {
                   <img
                     src={Pulp3}
                     alt="Avacodo"
-                    className="w-[214px] h-[127px]"
+                    className="w-[280px] h-[200px] "
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
                     Avacodo
@@ -155,7 +157,7 @@ export default function Homepage() {
                   <img
                     src={Pulp2}
                     alt="pinnaple"
-                    className="w-[280px] h-[180px]"
+                    className="w-[280px] h-[240px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
                     Pinnaple
@@ -172,22 +174,22 @@ export default function Homepage() {
               <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center p-[10px]">
                   <img
-                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/cacao.jpg"
+                    src={Pulp4}
                     alt="Cacao"
-                    className="w-[214px] h-[127px]"
+                    className="w-[260px] h-[210px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Cacao
+                    Mango
                   </h3>
                 </div>
                 <div className="flex flex-col items-center p-[10px]">
                   <img
-                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/vanilla.jpg"
-                    alt="Vanilla"
-                    className="w-[214px] h-[127px]"
+                    src={Pulp5}
+                    alt="Guava"
+                    className="w-[250px] h-[240px]"
                   />
                   <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Vanilla
+                    Guava
                   </h3>
                 </div>
               </div>
