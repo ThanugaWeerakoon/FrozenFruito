@@ -4,8 +4,11 @@ import Image2 from "../../public/images/2.png";
 import Image3 from "../../public/images/3.png";
 import Image4 from "../../public/images/4.png";
 import Image5 from "../../public/images/5.png";
+import Pulp from "../../public/images/9471315-removebg-preview.png";
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
+import Menu from "../Components/Menu";
+
 
 export default function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -118,6 +121,78 @@ export default function Homepage() {
           </svg>
         </span>
       </button>
+      <section className="mt-24">
+          <div className="ingre">
+            <div className="flex items-center justify-center">
+              <div></div>
+              <div className="flex flex-col items-center">
+                <h1 className="PT-serif text-[#1e1e1e] text-[40px] font-semibold">
+                  Our Awsome Pulp
+                </h1>
+                <img
+                  src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/divider2.png"
+                  alt="divider"
+                  className="w-[230px] h-[16px] mb-5"
+                />
+              </div>
+              <div></div>
+            </div>
+            <div className="flex items-center justify-center pt-[40px] pb-[120px] gap-[100px]">
+              <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center p-[10px]">
+                  <img
+                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/beans.jpg"
+                    alt="Coffee Beans"
+                    className="w-[214px] h-[127px]"
+                  />
+                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                    Coffee Beans
+                  </h3>
+                </div>
+                <div className="flex flex-col items-center p-[10px]">
+                  <img
+                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/cinamon.jpg"
+                    alt="Cinnamon"
+                    className="w-[214px] h-[127px]"
+                  />
+                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                    Cinnamon
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <img
+                  src={Pulp}
+                  alt="Coffee Cup"
+                  className="w-[460px] h-[515px]"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center p-[10px]">
+                  <img
+                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/cacao.jpg"
+                    alt="Cacao"
+                    className="w-[214px] h-[127px]"
+                  />
+                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                    Cacao
+                  </h3>
+                </div>
+                <div className="flex flex-col items-center p-[10px]">
+                  <img
+                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/vanilla.jpg"
+                    alt="Vanilla"
+                    className="w-[214px] h-[127px]"
+                  />
+                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                    Vanilla
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Menu/>
       <Contact/>
       <Footer/>
     </div>
