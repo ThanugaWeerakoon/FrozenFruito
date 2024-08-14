@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { WelcomeSlide } from "../Components/WelcomeSlide";
+import { Contact } from "../Components/Contact";
 
 
 
@@ -62,7 +63,9 @@ export default function Homepage(){
             <div className="welcome-text">
                 <h1>Welcome to <br/> Great Frozen!</h1>
             </div>
+           
         </div>    
+        
 
     )
 }
