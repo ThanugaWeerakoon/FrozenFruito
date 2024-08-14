@@ -52,7 +52,7 @@ export default function Homepage() {
               alt={slide.title}
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="text-white text-9xl font-bold  text-center px-6 py- rounded-md shadow-md transform transition-transform duration-500 ease-in-out hover:scale-105">
+              <h2 className="text-white text-9xl font-bold  text-center px-6 py- rounded-md transform transition-transform duration-500 ease-in-out hover:scale-105">
                 {slide.title}
               </h2>
             </div>
