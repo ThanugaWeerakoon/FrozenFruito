@@ -9,7 +9,7 @@ const Menu = () => {
         <div></div>
         <div className="flex flex-col items-center">
           <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
-            Our Pulp Product
+            Our Pulp Products
           </h1>
           <img
             src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/divider2.png"
