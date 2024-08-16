@@ -84,9 +84,9 @@ export default function ProductsPage() {
             </p>
           </div>
           <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
-            <h3 className="text-xl font-medium">Do you offer telemedicine services?</h3>
+            <h3 className="text-xl font-medium">What do you offer?</h3>
             <p className="mt-2 text-gray-600">
-              Yes, we offer telemedicine consultations.
+              We offer fresh frozen pulp products.
             </p>
           </div>
         </div>
