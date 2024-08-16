@@ -4,8 +4,14 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
+  const handleViewProduct = () => {
+    navigate("/products");
+  };
   return (
     <div className="w-full bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-2 sm:grid-cols-3 gap-10">
@@ -14,7 +20,7 @@ export default function Footer() {
           <FooterDivider className="my-4 border-gray-600" />
           <FooterLinkGroup col className="space-y-2">
             <FooterLink href="#" className="hover:text-gray-400">Our Story</FooterLink>
-            <FooterLink href="#" className="hover:text-gray-400">Products</FooterLink>
+            <FooterLink href="#" className="hover:text-gray-400" onClick={handleViewProduct}>Products</FooterLink>
           </FooterLinkGroup>
         </div>
         <div>
