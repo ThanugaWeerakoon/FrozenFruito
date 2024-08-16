@@ -3,97 +3,89 @@ import Footer from "../Components/Footer";
 
 export default function ProductsPage() {
   return (
-    <div className="bg-white">
-      <header className="bg-green-700 text-white text-center py-12">
-        <h1 className="text-4xl font-bold mt-16">Contact Us</h1>
+    <div className="bg-white text-gray-900">
+      <header className="bg-yellow-400 text-white text-center py-20">
+        <h1 className="text-5xl font-extrabold tracking-wide">Contact Us</h1>
       </header>
-      <section className="text-center py-12 px-4">
-        <h2 className="text-2xl font-bold">Get In Touch</h2>
-        <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
-          We are here to help you. Reach out to us via any of the following
-          methods.
+      <section className="text-center py-16 px-6">
+        <h2 className="text-3xl font-semibold mb-6">Get In Touch</h2>
+        <p className="mt-4 text-gray-600 max-w-xl mx-auto leading-relaxed">
+          We're here to assist you. Feel free to reach out to us through any of the methods below.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 animate-fadeIn">
-          <div className="p-4 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition-colors">
-            <h3 className="text-xl font-bold">Call Us</h3>
-            <p className="text-gray-700 mt-2">+1 123 456 7890</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12">
+          <div className="p-6 shadow-lg rounded-lg bg-yellow-50 hover:bg-yellow-100 transition duration-300 ease-in-out">
+            <h3 className="text-2xl font-semibold mb-2">Call Us</h3>
+            <p className="text-gray-700">0094767072207</p>
           </div>
-          <div className="p-4 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition-colors">
-            <h3 className="text-xl font-bold">Email Us</h3>
-            <p className="text-gray-700 mt-2">contact@wisedoctors.com</p>
+          <div className="p-6 shadow-lg rounded-lg bg-yellow-50 hover:bg-yellow-100 transition duration-300 ease-in-out">
+            <h3 className="text-2xl font-semibold mb-2">Email Us</h3>
+            <p className="text-gray-700">greatfrozenn@gmail.com</p>
           </div>
-          <div className="p-4 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition-colors">
-            <h3 className="text-xl font-bold">Visit Us</h3>
-            <p className="text-gray-700 mt-2">123 Health St, Wellness City</p>
+          <div className="p-6 shadow-lg rounded-lg bg-yellow-50 hover:bg-yellow-100 transition duration-300 ease-in-out">
+            <h3 className="text-2xl font-semibold mb-2">Visit Us</h3>
+            <p className="text-gray-700">No 659, Mahawaththa Road, Horagolla, Marawila</p>
           </div>
         </div>
       </section>
-      <section className="bg-gray-100 py-12 px-4">
-        <h2 className="text-2xl font-bold text-center">Send Us A Message</h2>
-        <form className="max-w-2xl mx-auto mt-8 space-y-8">
+      <section className="bg-gray-50 py-16 px-6">
+        <h2 className="text-3xl font-semibold text-center mb-8">Send Us A Message</h2>
+        <form className="max-w-xl mx-auto space-y-6">
           <div>
-            <label htmlFor="name" className="block text-gray-700 font-bold">
+            <label htmlFor="name" className="block text-lg font-medium">
               Name
             </label>
             <input
               type="text"
               id="name"
-              className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-bold">
+            <label htmlFor="email" className="block text-lg font-medium">
               Email
             </label>
             <input
               type="email"
               id="email"
-              className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-gray-700 font-bold">
+            <label htmlFor="message" className="block text-lg font-medium">
               Message
             </label>
             <textarea
               id="message"
-              rows="5"
-              className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+              rows="6"
+              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-700 text-white py-3 rounded-lg shadow-lg hover:bg-green-600 transition-colors"
+            className="w-full bg-yellow-500 text-white py-4 rounded-lg shadow-lg hover:bg-yellow-600 transition-colors"
           >
             Send Message
           </button>
         </form>
       </section>
-      <section className="text-center py-12 px-4">
-        <h2 className="text-2xl font-bold">Frequently Asked Questions</h2>
-        <div className="mt-8">
-          <div className="p-4 border rounded-lg shadow-md transition transform hover:scale-100 scale-90">
-            <h3 className="text-xl font-bold">
-              What are your operating hours?
-            </h3>
-            <p className="mt-2 text-gray-700">
+      <section className="text-center py-16 px-6">
+        <h2 className="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
+            <h3 className="text-xl font-medium">What are your operating hours?</h3>
+            <p className="mt-2 text-gray-600">
               We operate from 9 AM to 5 PM, Monday to Friday.
             </p>
           </div>
-          <div className="p-4 border rounded-lg shadow-md transition transform hover:scale-100 scale-90 mt-4">
-            <h3 className="text-xl font-bold">
-              How can I book an appointment?
-            </h3>
-            <p className="mt-2 text-gray-700">
-              You can book an appointment through our website or by calling our
-              office.
+          <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
+            <h3 className="text-xl font-medium">How can I book an appointment?</h3>
+            <p className="mt-2 text-gray-600">
+              You can book an appointment through our website or by calling our office.
             </p>
           </div>
-          <div className="p-4 border rounded-lg shadow-md transition transform hover:scale-100 scale-90  mt-4">
-            <h3 className="text-xl font-bold">
-              Do you offer telemedicine services?
-            </h3>
-            <p className="mt-2 text-gray-700">
+          <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
+            <h3 className="text-xl font-medium">Do you offer telemedicine services?</h3>
+            <p className="mt-2 text-gray-600">
               Yes, we offer telemedicine consultations.
             </p>
           </div>
