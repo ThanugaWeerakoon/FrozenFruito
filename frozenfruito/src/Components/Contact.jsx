@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Contact = () => {
   return (
     <div>
-           <section className="bg-gray-100 py-12 px-4">
+      <section className="bg-gray-100 py-12 px-4">
         <h2 className="text-2xl font-bold text-center">Send Us A Message</h2>
         <form className="max-w-2xl mx-auto mt-8 space-y-8">
           <div>
@@ -45,5 +45,5 @@ export const Contact = () => {
         </form>
       </section>
     </div>
-  )
-}
+  );
+};
