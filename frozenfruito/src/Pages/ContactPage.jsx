@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Components/Footer";
+import { Contact } from "../Components/Contact";
 
 export default function ProductsPage() {
   return (
@@ -27,47 +28,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-16 px-6">
-        <h2 className="text-3xl font-semibold text-center mb-8">Send Us A Message</h2>
-        <form className="max-w-xl mx-auto space-y-6">
-          <div>
-            <label htmlFor="name" className="block text-lg font-medium">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="block text-lg font-medium">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="block text-lg font-medium">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows="6"
-              className="w-full mt-2 p-4 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 text-white py-4 rounded-lg shadow-lg hover:bg-yellow-600 transition-colors"
-          >
-            Send Message
-          </button>
-        </form>
-      </section>
+        <Contact/>
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
         <div className="space-y-6">
