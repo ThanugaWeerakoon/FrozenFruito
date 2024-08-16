@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../Components/Footer";
 import { Contact } from "../Components/Contact";
 
@@ -11,7 +10,8 @@ export default function ProductsPage() {
       <section className="text-center py-16 px-6">
         <h2 className="text-3xl font-semibold mb-6">Get In Touch</h2>
         <p className="mt-4 text-gray-600 max-w-xl mx-auto leading-relaxed">
-          We're here to assist you. Feel free to reach out to us through any of the methods below.
+          We're here to assist you. Feel free to reach out to us through any of
+          the methods below.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12">
           <div className="p-6 shadow-lg rounded-lg bg-yellow-50 hover:bg-yellow-100 transition duration-300 ease-in-out">
@@ -24,24 +24,33 @@ export default function ProductsPage() {
           </div>
           <div className="p-6 shadow-lg rounded-lg bg-yellow-50 hover:bg-yellow-100 transition duration-300 ease-in-out">
             <h3 className="text-2xl font-semibold mb-2">Visit Us</h3>
-            <p className="text-gray-700">No 659, Mahawaththa Road, Horagolla, Marawila</p>
+            <p className="text-gray-700">
+              No 659, Mahawaththa Road, Horagolla, Marawila
+            </p>
           </div>
         </div>
       </section>
-        <Contact/>
+      <Contact />
       <section className="text-center py-16 px-6">
-        <h2 className="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold mb-8">
+          Frequently Asked Questions
+        </h2>
         <div className="space-y-6">
           <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
-            <h3 className="text-xl font-medium">What are your operating hours?</h3>
+            <h3 className="text-xl font-medium">
+              What are your operating hours?
+            </h3>
             <p className="mt-2 text-gray-600">
               We operate from 9 AM to 5 PM, Monday to Friday.
             </p>
           </div>
           <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
-            <h3 className="text-xl font-medium">How can I book an appointment?</h3>
+            <h3 className="text-xl font-medium">
+              How can I book an appointment?
+            </h3>
             <p className="mt-2 text-gray-600">
-              You can book an appointment through our website or by calling our office.
+              You can book an appointment through our website or by calling our
+              office.
             </p>
           </div>
           <div className="p-6 border rounded-lg shadow-lg transition transform hover:scale-105">
@@ -52,7 +61,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
