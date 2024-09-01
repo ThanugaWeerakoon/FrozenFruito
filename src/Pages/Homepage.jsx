@@ -5,25 +5,16 @@ import Image2 from "../../public/images/2.jpg";
 import Image3 from "../../public/images/3.jpg";
 import Image4 from "../../public/images/4.jpg";
 import Image5 from "../../public/images/5.jpg";
-import Pulp from "../../public/images/9471315-removebg-preview.png";
-import Pulp2 from "../../public/images/1_45_-removebg-preview.png";
-import Pulp3 from "../../public/images/avocado-is-being-sprayed-with-green-liquid_1293074-13970-removebg-preview.png";
-import Pulp4 from "../../public/images/vector-ripe-yellow-orange-red-whole-sliced-mango-cubes-with-leaf-isolated-white-background.png";
-import Pulp5 from "../../public/images/ripe-pear-side-view-wooden-grey-wall.png";
-import { Contact } from "../Components/Contact";
-import Footer from "../Components/Footer";
-import Menu from "../Components/Menu";
 
-
-export default function Homepage() {
+export default function ClothingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { url: Image1, title: "PASSION PULP" },
-    { url: Image2, title: "PINEAPPLE PULP" },
-    { url: Image3, title: "AVACADO PULP" },
-    { url: Image4, title: "MANGO PULP" },
-    { url: Image5, title: "GUAVA PULP" },
+    { url: Image1, title: "Stylish Jacket" },
+    { url: Image2, title: "Elegant Dress" },
+    { url: Image3, title: "Casual T-Shirt" },
+    { url: Image4, title: "Classic Jeans" },
+    { url: Image5, title: "Trendy Sneakers" },
   ];
 
   const nextSlide = () => {
@@ -42,8 +33,8 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen">
-      {/* Carousel wrapper */}
+    <div className="relative ">
+
       <div className="relative h-[93vh] overflow-hidden">
         {slides.map((slide, index) => (
           <div
@@ -58,7 +49,7 @@ export default function Homepage() {
               alt={slide.title}
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="text-white text-9xl font-bold  text-center px-6 py- rounded-md transform transition-transform duration-500 ease-in-out hover:scale-105">
+              <h2 className="text-white text-4xl font-bold text-center px-6 py- rounded-md transform transition-transform duration-500 ease-in-out hover:scale-105">
                 {slide.title}
               </h2>
             </div>
@@ -126,80 +117,6 @@ export default function Homepage() {
           </svg>
         </span>
       </button>
-      <section className="mt-24">
-          <div className="ingre">
-            <div className="flex items-center justify-center">
-              <div></div>
-              <div className="flex flex-col items-center">
-                <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
-                  Our Awsome Pulp
-                </h1>
-                <img
-                  src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/divider2.png"
-                  alt="divider"
-                  className="w-[230px] h-[16px] mb-5"
-                />
-              </div>
-              <div></div>
-            </div>
-            <div className="flex items-center justify-center pt-[40px] pb-[120px] gap-[100px]">
-              <div className="flex flex-col items-center">
-                <div className="flex flex-col items-center p-[10px]">
-                  <img
-                    src={Pulp3}
-                    alt="Avacodo"
-                    className="w-[280px] h-[200px] "
-                  />
-                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Avacodo
-                  </h3>
-                </div>
-                <div className="flex flex-col items-center p-[10px]">
-                  <img
-                    src={Pulp2}
-                    alt="pinnaple"
-                    className="w-[280px] h-[240px]"
-                  />
-                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Pinnaple
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <img
-                  src={Pulp}
-                  alt="Coffee Cup"
-                  className="w-[460px] h-[515px]"
-                />
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="flex flex-col items-center p-[10px]">
-                  <img
-                    src={Pulp4}
-                    alt="Cacao"
-                    className="w-[260px] h-[210px]"
-                  />
-                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Mango
-                  </h3>
-                </div>
-                <div className="flex flex-col items-center p-[10px]">
-                  <img
-                    src={Pulp5}
-                    alt="Guava"
-                    className="w-[250px] h-[240px]"
-                  />
-                  <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                    Guava
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Menu/>
-      <Contact/>
-      <Footer/>
     </div>
   );
 }
