@@ -10,7 +10,7 @@ export default function ClothingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { url: Image1, title: "Stylish Jacket" },
+    { url: Image1, title: "Sylish Jacket" },
     { url: Image2, title: "Elegant Dress" },
     { url: Image3, title: "Casual T-Shirt" },
     { url: Image4, title: "Classic Jeans" },
