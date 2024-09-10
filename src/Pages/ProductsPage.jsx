@@ -1,6 +1,18 @@
+
+import { useState, useEffect } from "react";
 import Footer from "../Components/Footer";
+import { ClipLoader } from "react-spinners";
 
 export default function ProductsPage() {
+  const [loading, setLoading] = useState(true); // Loading state
+
+  // Simulating a loading delay for 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds loading
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
   const slides = [
     {
       url: "/images/6.png",
@@ -64,6 +76,12 @@ export default function ProductsPage() {
 
   return (
     <div>
+      {loading ? (
+         <div className="flex justify-center items-center h-screen">
+         {/* Spinner loader while the content is loading */}
+         <ClipLoader color="#FBBF24" size={80} />
+       </div>
+     ) : (
       <div className="bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-extrabold text-center text-yellow-500 mb-10">
@@ -113,6 +131,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </div>
+     )}
       <Footer />
     </div>
   );

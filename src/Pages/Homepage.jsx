@@ -12,9 +12,19 @@ import Pulp5 from "../../public/images/ripe-pear-side-view-wooden-grey-wall.png"
 import { Contact } from "../Components/Contact";
 import Footer from "../Components/Footer";
 import Menu from "../Components/Menu";
+import { ClipLoader } from "react-spinners";
 
 export default function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  // Simulating a loading delay for 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds loading
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
 
   const slides = [
     { url: Image1, title: "PASSION PULP" },
@@ -24,116 +34,135 @@ export default function Homepage() {
     { url: Image5, title: "GUAVA PULP" },
   ];
 
+  const loadImages = (slideImages) => {
+    const loadImage = (src) =>
+      new Promise((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve();
+      });
+
+    return Promise.all(slideImages.map((slide) => loadImage(slide.url)));
+  };
+
+  useEffect(() => {
+    // Preload images
+    loadImages(slides).then(() => setLoading(false));
+
+    const slideInterval = setInterval(nextSlide, 3000);
+    return () => clearInterval(slideInterval);
+  }, []);
+
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === slides.length - 1 ? 0 : prevSlide + 1
     );
   };
 
-  useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000);
-    return () => clearInterval(slideInterval);
-  }, []);
-
   return (
     <div className="relative w-full h-screen">
-      {/* Carousel wrapper */}
-      <div className="relative h-[93vh] overflow-hidden">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <img
-              src={slide.url}
-              alt={slide.title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="text-white text-9xl font-bold text-center px-6 py-4 rounded-md transform transition-transform duration-500 ease-in-out hover:scale-105">
-                {slide.title}
-              </h2>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <section className="mt-24">
-        <div className="ingre">
-          <div className="flex items-center justify-center">
-            <div></div>
-            <div className="flex flex-col items-center">
-              <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
-                Our Awesome Pulp
-              </h1>
-              <img
-                src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/divider2.png"
-                alt="divider"
-                className="w-[230px] h-[16px] mb-5"
-              />
-            </div>
-            <div></div>
-          </div>
-          <div className="flex items-center justify-center pt-[40px] pb-[120px] gap-[100px]">
-            <div className="flex flex-col items-center">
-              <div className="flex flex-col items-center p-[10px]">
-                <img
-                  src={Pulp3}
-                  alt="Avocado"
-                  className="w-[280px] h-[200px]"
-                />
-                <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                  Avocado
-                </h3>
-              </div>
-              <div className="flex flex-col items-center p-[10px]">
-                <img
-                  src={Pulp2}
-                  alt="Pineapple"
-                  className="w-[280px] h-[240px]"
-                />
-                <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                  Pineapple
-                </h3>
-              </div>
-            </div>
-            <div>
-              <img
-                src={Pulp}
-                alt="Pulp"
-                className="w-[460px] h-[515px]"
-              />
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="flex flex-col items-center p-[10px]">
-                <img
-                  src={Pulp4}
-                  alt="Mango"
-                  className="w-[260px] h-[210px]"
-                />
-                <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                  Mango
-                </h3>
-              </div>
-              <div className="flex flex-col items-center p-[10px]">
-                <img
-                  src={Pulp5}
-                  alt="Guava"
-                  className="w-[250px] h-[240px]"
-                />
-                <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
-                  Guava
-                </h3>
-              </div>
-            </div>
-          </div>
+      {loading ? (
+        <div className="flex justify-center items-center h-screen">
+          {/* Spinner loader while the content is loading */}
+          <ClipLoader color="#FBBF24" size={80} />
         </div>
-      </section>
-      <Menu />
-      <Contact />
-      <Footer />
+      ) : (
+        <>
+          {/* Carousel wrapper */}
+          <div className="relative h-[93vh] overflow-hidden">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-1000 ${
+                  index === currentSlide ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <img
+                  src={slide.url}
+                  alt={slide.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <h2 className="text-white text-9xl font-bold text-center px-6 py-4 rounded-md transform transition-transform duration-500 ease-in-out hover:scale-105">
+                    {slide.title}
+                  </h2>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <section className="mt-24">
+            <div className="ingre">
+              <div className="flex items-center justify-center">
+                <div></div>
+                <div className="flex flex-col items-center">
+                  <h1 className="PT-serif text-yellow-500 text-[40px] font-semibold">
+                    Our Awesome Pulp
+                  </h1>
+                  <img
+                    src="https://templatekit.tokokoo.com/coffeekit/wp-content/uploads/sites/6/2020/04/divider2.png"
+                    alt="divider"
+                    className="w-[230px] h-[16px] mb-5"
+                  />
+                </div>
+                <div></div>
+              </div>
+              <div className="flex items-center justify-center pt-[40px] pb-[120px] gap-[100px]">
+                <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center p-[10px]">
+                    <img
+                      src={Pulp3}
+                      alt="Avocado"
+                      className="w-[280px] h-[200px]"
+                    />
+                    <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                      Avocado
+                    </h3>
+                  </div>
+                  <div className="flex flex-col items-center p-[10px]">
+                    <img
+                      src={Pulp2}
+                      alt="Pineapple"
+                      className="w-[280px] h-[240px]"
+                    />
+                    <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                      Pineapple
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <img src={Pulp} alt="Pulp" className="w-[460px] h-[515px]" />
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center p-[10px]">
+                    <img
+                      src={Pulp4}
+                      alt="Mango"
+                      className="w-[260px] h-[210px]"
+                    />
+                    <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                      Mango
+                    </h3>
+                  </div>
+                  <div className="flex flex-col items-center p-[10px]">
+                    <img
+                      src={Pulp5}
+                      alt="Guava"
+                      className="w-[250px] h-[240px]"
+                    />
+                    <h3 className="karla text-[23px] text-[#6ec1e4] font-semibold">
+                      Guava
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <Menu />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
